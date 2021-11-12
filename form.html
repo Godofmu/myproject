@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: #fc0;
+        }
+        .div1
+        {
+            width: 350px;
+            margin: auto;
+            margin: 10 0 0 450px;
+            overflow: hidden;
+            padding: 75px;
+            background: pink
+        }
+       label {
+           color: white;
+           padding-left: 10px;
+       }
+       .inputtext {
+           width: 300px;
+           height: 300px;
+           border: none;
+           border-radius: 2px;
+           padding-left: 8px;
+       }
+
+       button
+       {
+           width: 300px
+           height: 30px;
+           border: green;
+           border-radius: 10px;
+           padding-left: 7px;
+           font-size: 16px;
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form And open a A new page </title>
+    <script>
+        function myFunction ()
+        {
+        var un = document.forms ["myform"]. value;
+        var pw = documents.forms ["myForm"[ "Pass" ]].value;
+        if (un=="student" && pw="1234") 
+        {
+            window.location.href="welcome.html";
+        }
+        else
+        {
+            alert("Invalid Username and Password");
+        }
+        }   
+    </script>
+</head>
+<body>
+ <h2 style="text-align: center; padding: 10px; color: green;" >Vrajalal</h2>
+ <div class="div1">
+<form name="myForm" method="post">
+<label>User name</label>
+<input type="text" name="fname" class="inputText"   placeholder="First name">
+<br><br>
+    <label>last name</label>
+    <input type="text" name="lname" class="inputText"   placeholder="last name">
+    <br><br>
+<label>password</label>
+<input type="text" name="password" class="inputText"   placeholder="password">
+<br><br>
+  <input style="text-align: center;" type="button" name="login" id="login" value="login" onclick="myfunction()"><br><br>
+<input type="button" name="forgot Password?" id="Password" value="forgot Password?" onclick="myFunction()"><br><br>
+
+<a href="anotherpage.html">
+    <input type="button" name="Create a new Account" id="Account" value="Create a new Account" onclick="myfunction()">
+    <a href=""></a>
+</a>
+
+
+
+                                        
+
+
+
+
+
+<br><br>
+</form>
+
+</body>
+</html>
